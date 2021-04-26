@@ -13,6 +13,8 @@
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./js/swiper.min.css" />
 
     <link rel="stylesheet" href="./css/style.css">
 <!-- 폰트 -->
@@ -76,10 +78,10 @@
 			</div>
 			<div class="gnb"> <!-- general navigator -->
 				<ul>
-					<li><a href="#none">팀 소개</a></li>
-					<li><a href="#none">고객센터</a></li>
-					<li><a href="#none">예매</a></li>
-					<li><a href="#none">예매 확인</a></li>
+					<li><a href="#none"><span>팀 소개</span></a></li>
+					<li><a href="#none"><span>고객센터</span></a></li>
+					<li><a href="#none"><span>예매</span></a></li>
+					<li><a href="#none"><span>예매 확인</span></a></li>
 				</ul>
 			</div>
 			
@@ -89,8 +91,24 @@
 		.main-visual {text-align:center; background:url('./img/main-visual.jpg'); height:900px; background-size:cover; background-position:0 0;}
 		.main-visual h2{font-size:50px; padding-top:320px; padding-bottom:20px; color:#fff; text-shadow: 2px 2px 2px #00000099;}
 		.main-visual p{font-size:20px; }
-		.main-visual p > span{background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #ffffff75 50%);}
+        .main-visual p > span{text-shadow: 3px 0.5px 3px #b8b8b8;}
+
+        .numbers {margin-top:60px; text-align:center;}
+		.numbers h2{font-size:40px;}
+		.numbers > p{font-size:18px; color:gray;}
+		.numbers .num-data > ul {margin-top:30px;}
+		.numbers .num-data > ul > li{display: inline-block; padding:5px 60px;}
+		.numbers .num-data > ul > li > p {border-bottom: 1px; border-bottom:1px solid #bbb; padding-bottom:10px; margin-bottom:20px; font-size:50px; font-weight:bold;}
+		.numbers .num-data > ul > li > p > span{font-size:20px; color:gray;}
+		.numbers .num-data > ul > li > span{font-size:20px; color:gray;}
+
+        .slide-banner {margin-top:80px;}
+		.slide-banner .swiper-container {margin:0 auto; width:90%;}
+		/* height가 750이 넘으면 슴겨라*/
+		.slide-banner .swiper-slide{height: 750px; overflow: hidden;}
+		.slide-banner .swiper-slide img{width:100%; }
     </style>
+
 	<div class="contents">
 	<!-- 내용 출력 -->
         <div class="main-visual">
@@ -100,6 +118,57 @@
                 <span>그 처음과 끝을 팬 여러분과 함께하겠습니다.</span>
             </p>
         </div>
+
+        <div class="numbers-wrap">
+			<div class="numbers">
+				<h2>Since 1982</h2>
+				<p>삼성라이온즈의 역사</p>
+				<div class="num-data">
+					<ul>
+						<li>
+							<p>4<span>회</span></p>
+							<span>통합우승</span>
+						</li>
+						<li>
+							<p>8<span>회</span></p>
+							<span>우승</span>
+						</li>
+						<li>
+							<p>3<span>명</span></p>
+							<span>영구결번</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+        <!-- Swiper -->
+		<div class="slide-banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="./img/banner01.jpg"/></div>
+					<div class="swiper-slide"><img src="./img/banner02.jpg"/></div>
+					<div class="swiper-slide"><img src="./img/banner03.jpg"/></div>
+					<div class="swiper-slide"><img src="./img/banner04.jpg"/></div>
+					<div class="swiper-slide"><img src="./img/banner05.jpg"/></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3,
+					spaceBetween: 30,
+                    pagination: {
+					el: '.swiper-pagination',
+                }, 
+                autoplay: {
+					delay: 2000,
+					disableOnInteraction: false,
+					},
+				});
+			</script>
+		</div>
+
 	</div>
 
 	<div class="footer">
