@@ -6,7 +6,7 @@
 .nanumsquare {
 	font-family: 'NanumSquare', sans-serif !important;
 	}
-
+/* 초기화 */
 html {overflow-y:scroll}
 body {margin:0;padding:0;font-size:0.75em; font-family:'NanumSquare','Noto Sans KR'; background:#FFFFFF;}
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
@@ -38,3 +38,69 @@ img{
 	height:auto;
 	width:auto\9;
 	}
+
+/*index, 네비게이션바*/
+
+body{ background-repeat : no-repeat;}
+		.header{background: #fff; border-bottom: 1px solid #bbb; box-shadow:1px 1px 25px #bbb;}
+		.header,.contents,.footer{}
+		.header .header-box{overflow:hidden; padding: 0px 10px;}
+		.header h1{float:left;}
+		.header h1 a{display: block; padding:10px;}
+		.header h1 a img{max-width: 150px; max-height: 70px;}
+		.header .gnb{width:400px; margin:0 auto;}
+		.header .gnb > ul{overflow:hidden; margin-top:23px;}
+		.header .gnb > ul > li {float:left; margin:0 10px;}
+		.header .gnb > ul > li a{display: block; padding:10px; font-size:16px;}
+		.header .gnb > ul > li > a > span:hover{background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #1f51b761 50%);}
+		.header .tnb{float:right; margin-top:23px; }
+		.header .tnb > ul > li {float:left;}
+		.header .tnb > ul > li a{display: block; padding:10px; font-size:16px;}
+		.header{transition:all 0.3;}
+		.header.fixed{position: fixed; width:100%; z-index:9999;}
+/* index 대문*/
+.main-visual {text-align:center; background:url('../img/main-visual.jpg'); height:900px; background-size:cover; background-position:0 0;}
+		.main-visual h2{font-size:50px; padding-top:320px; padding-bottom:20px; color:#fff; text-shadow: 2px 2px 2px #00000099;}
+		.main-visual p{font-size:20px; }
+		.main-visual p > span{text-shadow: 3px 0.5px 3px #b8b8b8;}
+/* index 역사*/
+		.numbers {margin-top:150px; text-align:center;}
+		.numbers h2{font-size:40px;}
+		.numbers > p{font-size:18px; color:gray;}
+		.numbers .num-data > ul {margin-top:30px;}
+		.numbers .num-data > ul > li{display: inline-block; padding:5px 60px;}
+		.numbers .num-data > ul > li > p {border-bottom: 1px; border-bottom:1px solid #bbb; padding-bottom:10px; margin-bottom:20px; font-size:50px; font-weight:bold;}
+		.numbers .num-data > ul > li > p > span{font-size:20px; color:gray;}
+		.numbers .num-data > ul > li > span{font-size:20px; color:gray;}
+/* index 슬라이드배너*/
+		.slide-banner {margin-top:150px;}
+		.slide-banner .swiper-container {margin:0 auto; width:100%; height:500px;}
+		/* height가 750이 넘으면 숨겨라*/
+		.slide-banner .swiper-slide{height: 750px; overflow: hidden;}
+		.slide-banner .swiper-slide img{width:100%; }
+/* index 라이온즈 소식*/
+		.main-gallery-wrap {margin:0 auto; width:1400px; margin-top:150px;}
+		.main-gallery-wrap .m-g-box h2 {text-align:center; font-size:35px; margin-bottom:40px;}
+		.main-gallery ul{overflow:hidden;}
+		.main-gallery li{width:33.33%; float:left; padding:10px;}
+		.main-gallery li:nth-child(3n+1){clear:both;}
+		.main-gallery li > div{padding: 5px; border: 1px solid #888; text-align:center;}
+
+		.main-gallery li > div .thum{max-width:450px; max-height:390px; overflow:hidden;}
+		.main-gallery li > div .info{}
+		.main-gallery li > div .info h3{margin-top:15px;}
+		.main-gallery li > div .info p{color:#888; margin:10px 0;}
+		.main-gallery li > div .info span{display: inline-block; width: 30px; height: 30px; border: 1px solid #ccc; border-radius: 50%; line-height:28px;}
+
+		.main-gallery li > div .info span{transition:all 0.3s; overflow:hidden;}
+		.main-gallery li > div .info span u {display: none;}
+		.main-gallery li:hover > div .info span{width:120px; border-radius:15px; background: #1749ac; color: #fff; border: 0;}
+		.main-gallery li:hover > div .info span u{display: inline-block;}
+/* index footer*/
+		.footer {margin-top:150px; padding:15px; background: #006fb7;}
+		.footer > div {padding:15px; max-width: 1200px; margin:0 auto; overflow:hidden;}
+		.footer > div > div{float:left;}
+		.footer > div > .f-logo h1 span{color:#fff; margin-left:10px; display: inline-block; vertical-align: middle;}
+		.footer > div .f-logo{padding: 10px; margin:10px;}
+		.footer > div > .f-logo h1 a img{max-width: 60px; min-height: 60px;}
+		.footer > div > .f-copy{padding: 5px; margin-top:35px; margin-left:15px; color:#fff;}
