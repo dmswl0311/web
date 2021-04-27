@@ -41,6 +41,9 @@
 <!-- auto fix -->
 <script src=''></script>
 
+<!-- font awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -93,7 +96,7 @@
 		.main-visual p{font-size:20px; }
         .main-visual p > span{text-shadow: 3px 0.5px 3px #b8b8b8;}
 
-        .numbers {margin-top:60px; text-align:center;}
+        .numbers {margin-top:150px; text-align:center;}
 		.numbers h2{font-size:40px;}
 		.numbers > p{font-size:18px; color:gray;}
 		.numbers .num-data > ul {margin-top:30px;}
@@ -102,11 +105,28 @@
 		.numbers .num-data > ul > li > p > span{font-size:20px; color:gray;}
 		.numbers .num-data > ul > li > span{font-size:20px; color:gray;}
 
-        .slide-banner {margin-top:80px;}
-		.slide-banner .swiper-container {margin:0 auto; width:90%;}
+        .slide-banner {margin-top:150px;}
+		.slide-banner .swiper-container {margin:0 auto; width:100%; height:500px;}
 		/* height가 750이 넘으면 슴겨라*/
 		.slide-banner .swiper-slide{height: 750px; overflow: hidden;}
 		.slide-banner .swiper-slide img{width:100%; }
+
+		.main-gallery-wrap {margin:0 auto; width:1400px; margin-top:150px;}
+		.main-gallery-wrap .m-g-box h2 {text-align:center; font-size:35px; margin-bottom:40px;}
+		.main-gallery ul{overflow:hidden;}
+		.main-gallery li{width:33.33%; float:left; padding:10px;}
+		.main-gallery li:nth-child(3n+1){clear:both;}
+		.main-gallery li > div{padding: 5px; border: 1px solid #888; text-align:center;}
+
+		.main-gallery li > div .thum{max-width:450px; max-height:390px; overflow:hidden;}
+		.main-gallery li > div .info h3{margin-top:15px;}
+		.main-gallery li > div .info p{color:#888; margin:10px 0;}
+		.main-gallery li > div .info span{display: inline-block; width: 30px; height: 30px; border: 1px solid #ccc; border-radius: 50%; line-height:28px;}
+
+		.main-gallery li > div .info span{transition:all 0.3s; overflow:hidden;}
+		.main-gallery li > div .info span u {display: none;}
+		.main-gallery li:hover > div .info span{width:120px; border-radius:15px; background:#1749ac; color: #fff; border: 0;}
+		.main-gallery li:hover > div .info span u{display: inline-block;}
     </style>
 
 	<div class="contents">
@@ -126,15 +146,19 @@
 				<div class="num-data">
 					<ul>
 						<li>
-							<p>4<span>회</span></p>
+							<p data-aos="zoom-out" data-aos-delay="200">4<span>회</span></p>
 							<span>통합우승</span>
 						</li>
 						<li>
-							<p>8<span>회</span></p>
-							<span>우승</span>
+							<p data-aos="zoom-out" data-aos-delay="500">8<span>회</span></p>
+							<span>시리즈우승</span>
 						</li>
 						<li>
-							<p>3<span>명</span></p>
+							<p data-aos="zoom-out" data-aos-delay="800">9<span>회</span></p>
+							<span>리그우승</span>
+						</li>
+						<li>
+							<p data-aos="zoom-out" data-aos-delay="1100">3<span>명</span></p>
 							<span>영구결번</span>
 						</li>
 					</ul>
@@ -168,7 +192,86 @@
 				});
 			</script>
 		</div>
-
+		<div class="main-gallery-wrap">
+			<div class="m-g-box">
+				<h2>라이온즈 소식</h2>
+				<div class="main-gallery">
+					<ul>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none"><img src="./img/gallery01.PNG" alt=""></a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>팀스토어</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span><i class="fa fa-eye" aria-hidden="true"><u>link</u></i></span>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none"><img src="./img/gallery02.PNG" alt=""></a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>어린이 회원 모집</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span><i class="fa fa-eye" aria-hidden="true"><u>link</u></i></span>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none"><img src="./img/gallery03.PNG" alt=""></a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>라이온즈 파트너</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span><i class="fa fa-eye" aria-hidden="true"><u>link</u></i></span>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none"><img src="./img/gallery04.PNG" alt=""></a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>라이온즈 tv</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span><i class="fa fa-eye" aria-hidden="true"><u>link</u></i></span>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none"><img src="./img/gallery05.PNG" alt=""></a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>KBO 리그 SAFE 캠페인</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span><i class="fa fa-eye" aria-hidden="true"><u>link</u></i></span>
+									</a>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="footer">
