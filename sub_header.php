@@ -64,7 +64,7 @@
 				<ul>
 					<li><a href="#none"><span>팀 소개</span></a></li>
 					<li><a href="../bbs/notice-list.html"><span>고객센터</span></a></li>
-					<li><a href="#none"><span>예매</span></a></li>
+					<li><a href="../booking/list.html"><span>예매</span></a></li>
 					<li><a href="#none"><span>예매 확인</span></a></li>
 				</ul>
 			</div>

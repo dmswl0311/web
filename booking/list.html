@@ -1,0 +1,86 @@
+<!-- 상단 내용 불러오기 -->
+<?php include('../sub_header.php');?>
+
+<style>
+	.booking {max-width:1200px; margin:0 auto;}
+	.booking-wrap {margin-top:30px; width:100%;}
+	.booking-wrap > ul > li .booking-box > div.thum > img{max-width:300px; overflow:hidden;}
+
+	.booking-wrap > ul > li{padding: 10px;}
+
+	.booking-box{overflow:hidden;}
+	.booking-box > div{float:left; padding: 10px;}
+	.booking-box > div.thum{width:30%;}
+	.booking-box > div.info{width:70%; text-align:left;}
+	.booking-box > div.info h3{font-size:25px;}
+	.booking-box > div.info p{font-size:15px; color: #666;}
+	.booking-box > div.info i{font-size:normal; color: #999; display: block; margin-top: 10px;}
+	.booking-wrap .pagination-box {text-align:center;}
+</style>
+
+<div class="booking">
+	<div class="booking-wrap">
+		<div class="search-box">
+			<div class="search">
+				<input type="text"><button>검색</button>
+			</div>
+		</div>
+		<div>
+			<ul>
+				<li>
+					<div class="booking-box">
+						<div class="thum">
+							<img src="../img/gallery01.PNG" alt="">
+						</div>
+						<div class="info">
+							<h3>장소명</h3>
+							<p>블라블라블라블라는 실시간으로 객체 머시기머시기 블러처리 머시기블라블라블라블라는 실시간으로 객체 머시기머시기 블러처리 머시기</p>
+							<i>2021-05-03</i>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="booking-box">
+						<div class="thum">
+							<img src="../img/gallery02.PNG" alt="">
+						</div>
+						<div class="info">
+							<h3>장소명</h3>
+							<p>블라블라블라블라는 실시간으로 객체 머시기머시기 블러처리 머시기블라블라블라블라는 실시간으로 객체 머시기머시기 블러처리 머시기</p>
+							<i>2021-05-03</i>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="booking-box">
+						<div class="thum">
+							<img src="../img/gallery05.PNG" alt="">
+						</div>
+						<div class="info">
+							<h3>장소명</h3>
+							<p>장소 설명 부분</p>
+							<i>2021-05-03</i>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="pagination-box">
+			<div class="pagination">
+				<ul>
+					<li><a href="">처음으로</a></li>
+					<li><a href="">이전</a></li>
+					<li><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">다음</a></li>
+					<li><a href="">마지막</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 하단 내용 불러오기 -->
+<?php include('../sub_footer.php');?>
