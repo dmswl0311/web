@@ -1,0 +1,36 @@
+<!-- 상단 내용 불러오기 -->
+<?php include('../sub_header.php');?>
+
+<!-- 서브 메뉴 -->
+<div class="snb-wrap">
+	<div>
+		<ul>
+			<li><a href="../bbs/notice-list.html"><span>공지사항</span></a></li>
+			<li><a href=""><span>자유게시판</span></a></li>
+			<li class="on"><a href="../bbs/gallery-list.html"><span>갤러리</span></a></li>
+		</ul>
+	</div>
+</div>
+<style>
+	.subject .notice-check{font-size:14px; font-weight: normal; float:right; margin-right:10px;}
+	.subject input{height:30px; padding:10px;}
+	.content textarea{width:1180px; height:200px; resize: none; font-size:14px; padding:10px;}
+	.file > label {display: block; padding:5px;}
+</style>
+<!-- 공지사항 내용 -->
+<div class="notice-content-wrap">
+	<div class="notice-content">
+		<div class="subject">
+			<label for="">제목  </label><input type="text">
+			</div>
+		</div>
+		<div class="content"><textarea name="" id="" placeholder="내용을 입력해주세요"></textarea></div>
+		<div class="file">
+			<label for=""><i class="fa fa-download" aria-hidden="true"></i> 이미지첨부 #1 <input type="file"></label>
+		</div>
+	</div>
+	<div class="write">
+		<a href="../bbs/gallery-list.html">저장</a>
+	</div>
+</div>
+<?php include('../sub_footer.php')?>

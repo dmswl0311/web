@@ -1,0 +1,50 @@
+<!-- 상단 내용 불러오기 -->
+<?php include('../sub_header.php');?>
+
+<!-- 서브 메뉴 -->
+<div class="snb-wrap">
+	<div>
+		<ul>
+			<li><a href="../bbs/notice-list.html"><span>공지사항</span></a></li>
+			<li><a href=""><span>자유게시판</span></a></li>
+			<li class="on"><a href="../bbs/gallery-list.html"><span>갤러리</span></a></li>
+		</ul>
+	</div>
+</div>
+<style>
+	.notice-content .content {font-size:15px;}
+	.content .thum {text-align:center;}
+	.content .thum > img {margin-bottom:20px;}
+</style>
+<!-- 갤러리 내용 -->
+<div class="notice-content-wrap">
+	<div class="notice-content">
+		<div class="thum"></div>
+		<div class="subject">갤러리 제목입니다! <img src="../img/newicon.jpg" alt=""></div>
+		<div class="about">
+			<ul>
+				<li class="name">
+					글쓴이: <span>조은지</span>
+				</li>
+				<li class="del">
+					<a href="">삭제</a>
+				</li>
+				<li class="mod">
+					<a href="">수정</a>
+				</li>
+				<li class="date">
+					등록일: <span>2021-04-27</span>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="content">
+			<div class="thum"><img src="../img/thum01.jpg" alt=""></div>
+			<span>오승환의 300세이브를 축하합니다. KBO 최초 300SV! 오승환의 300세이브를 축하합니다. KBO 최초 300SV! 오승환의 300세이브를 축하합니다. KBO 최초 300SV! 오승환의 300세이브를 축하합니다. KBO 최초 300SV! 오승환의 300세이브를 축하합니다. KBO 최초 300SV! </span>
+		</div>
+	</div>
+	<div class="notice-view-btn">
+		<div class="notice-list"><a href="../bbs/gallery-list.html">목록</a></div>
+	</div>
+</div>
+<?php include('../sub_footer.php')?>
