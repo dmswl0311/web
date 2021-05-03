@@ -1,0 +1,37 @@
+<!-- 상단 내용 불러오기 -->
+<?php include('../sub_header.php');?>
+
+<!-- 서브 메뉴 -->
+<div class="snb-wrap">
+	<div>
+		<ul>
+			<li class="on"><a href=""><span>공지사항</span></a></li>
+			<li><a href=""><span>자유게시판</span></a></li>
+			<li><a href=""><span>갤러리</span></a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- 공지사항 내용 -->
+<div class="notice-content-wrap">
+	<div class="notice-content">
+		<div class="subject">
+			<label for="">제목  </label><input type="text">
+			<span class="notice-check">
+				<input type="checkbox" id="chk-notice"><label for="chk-notice">선택 시 공지사항</label>
+			</span>
+			</div>
+		</div>
+		<div class="content"><textarea name="" id="" placeholder="내용을 입력해주세요"></textarea></div>
+		<div class="file">
+			<label for=""><i class="fa fa-download" aria-hidden="true"></i> 첨부파일 #1 <input type="file"></label>
+			<label for=""><i class="fa fa-download" aria-hidden="true"></i> 첨부파일 #2 <input type="file"></label>
+		</div>
+	</div>
+	<div class="notice-view-btn">
+		<div class="write">
+		<a href="../bbs/notice-list.html">저장</a>
+		</div>
+	</div>
+</div>
+<?php include('../sub_footer.php')?>
