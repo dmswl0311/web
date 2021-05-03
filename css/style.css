@@ -56,8 +56,8 @@ body{ background-repeat : no-repeat;}
 		.header .tnb{float:right; margin-top:23px; }
 		.header .tnb > ul > li {float:left;}
 		.header .tnb > ul > li a{display: block; padding:10px; font-size:16px;}
-		.header{transition:all 0.3;}
-		.header.fixed{position: fixed; width:100%; z-index:9999;}
+		.header{transition:all 0.3s;}
+		.header.fixed{position: fixed; width:100%; z-index:9999; top:0;}
 /* index 대문*/
 .main-visual {text-align:center; background:url('../img/main-visual.jpg'); height:900px; background-size:cover; background-position:0 0;}
 		.main-visual h2{font-size:50px; padding-top:320px; padding-bottom:20px; color:#fff; text-shadow: 2px 2px 2px #00000099;}
