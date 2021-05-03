@@ -181,3 +181,14 @@ body{ background-repeat : no-repeat;}
 	.notice-content-wrap .notice-view-btn {text-align:right;}
 	.notice-content-wrap .notice-view-btn > div {display: inline-block; padding:8px 10px; background: #1749ac; margin-top:20px; border-radius:5px;}
 	.notice-content-wrap .notice-view-btn > div > a {color:#fff; font-size:14px;}
+
+	/* 갤러리 리스트 */
+	.search-box { margin-bottom: 30px;}
+	.gallery-box > ul {width:100%; overflow:hidden; border-top: 3px solid #000; padding-top:10px;}
+	.gallery-box > ul > li {width:33.3%; float:left; margin-bottom: 30px; }
+	.gallery-box > ul > li > div {padding: 10px; border: 1px solid #ccc;}
+	.gallery-box > ul li .thum {background: #fff;}
+	.gallery-box > ul li .thum img{max-width:360px; max-height:360px; overflow:hidden; margin-bottom:15px;}
+	.gallery-box > ul li .subject {font-size:15px; font-weight: bold; margin-bottom:10px;}
+	.gallery-box > ul li .content {font-size:13px; padding: 0 30px;}
+	.gallery-box ul li:nth-child(3n+1){clear:both;}
