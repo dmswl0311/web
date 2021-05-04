@@ -54,8 +54,8 @@
 			<h1><a href="./index.html"><img src="./img/logo03.jpg" alt="동그란로고"></a></h1>
 			<div class="tnb">
 				<ul>
-					<li><a href="#none">로그인</a></li>
-					<li><a href="#none">회원가입</a></li>
+					<li><a href="./member/login.html">로그인</a></li>
+					<li><a href="./member/join.html">회원가입</a></li>
 	<!-- 				<li><a href="#none">로그아웃</a></li> -->
 	<!-- 				<li><a href="#none">정보수정</a></li> -->
 				</ul>
@@ -65,7 +65,7 @@
 					<li><a href="#none"><span>팀 소개</span></a></li>
 					<li><a href="./bbs/notice-list.html"><span>고객센터</span></a></li>
 					<li><a href="./booking/list.html"><span>예매</span></a></li>
-					<li><a href="#none"><span>예매 확인</span></a></li>
+					<li><a href="./booking/mypage.html"><span>예매 확인</span></a></li>
 				</ul>
 			</div>
 			

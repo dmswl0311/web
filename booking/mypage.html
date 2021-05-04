@@ -1,0 +1,65 @@
+<!-- 상단 내용 불러오기 -->
+<?php include('../sub_header.php');?>
+
+<style>
+	.notice-wrap h1 {margin-top:50px;}
+	.notice-box > ul > li .date > span.color01{color:green;}
+	.notice-box > ul > li .date > span.color02{color:blue;}
+	.notice-box > ul > li .date > span.color03{color:purple;}
+	.notice-box > ul > li .date > span.color04{color:red;}
+	.notice-box > ul > li .subject > img {max-width:12px;}
+</style>
+
+<!-- 예매 확인 -->
+<div class="notice-wrap">
+	<h1>예매 확인</h1>
+	<div class="search-box">
+		<div class="search">
+			<input type="text"><button>검색</button>
+		</div>
+	</div>
+	<div class="notice-box">
+		<ul>
+			<li> <!-- 테이블 -->
+				<div class="num">번호</div> <!-- 테이블 cell -->
+				<div class="subject">장소</div>
+				<div class="name">예약자</div>
+				<div class="date">상태</div>
+			</li>
+			<li>
+				<div class="num">2</div>
+				<div class="subject">블루존 <img src="../img/newicon.jpg" alt=""></div>
+				<div class="name">오승환</div>
+				<div class="date"><span class="color01">승인</span>
+<!-- 				<span class="color02">대기</span> -->
+<!-- 				<span class="color03">보류</span> -->
+<!-- 				<span class="color04">거절</span> -->
+				</div>
+			</li>
+			<li> 
+				<div class="num">1</div>
+				<div class="subject">SKY지정석</div>
+				<div class="name">박해민</div>
+				<div class="date"><span class="color02">대기</span>
+<!-- 				<span class="color01">승인</span> -->
+<!-- 				<span class="color03">보류</span> -->
+<!-- 				<span class="color04">거절</span> --></div>
+			</li>
+		</ul>
+	</div>
+	<div class="pagination-box">
+		<div class="pagination">
+			<ul>
+				<li><a href="">처음으로</a></li>
+				<li><a href="">이전</a></li>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">다음</a></li>
+				<li><a href="">마지막</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<?php include('../sub_footer.php')?>
