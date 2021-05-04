@@ -62,7 +62,7 @@
 			</div>
 			<div class="gnb"> <!-- general navigator -->
 				<ul>
-					<li><a href="#none"><span>팀 소개</span></a></li>
+					<li><a href="./page/intro.html"><span>팀 소개</span></a></li>
 					<li><a href="./bbs/notice-list.html"><span>고객센터</span></a></li>
 					<li><a href="./booking/list.html"><span>예매</span></a></li>
 					<li><a href="./booking/mypage.html"><span>예매 확인</span></a></li>

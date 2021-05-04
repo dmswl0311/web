@@ -1,0 +1,44 @@
+<!-- 상단 내용 불러오기 -->
+<?php include('../sub_header.php');?>
+<style>
+	.section{}
+	#fullpage{}
+	#section0{background: url('../img/intro03.jpg'); background-size: cover; background-position:center;}
+	.section00-box {text-align:center; color:#fff; font-size:37px; font-weight: bold; margin-bottom:120px; text-shadow: 2px 2px 8px #686868;}
+	#section1{background: url('../img/intro05.jpg'); background-size: cover; background-position:center; }
+	.section01-box {text-align: left; color:#fff; font-size:30px; text-shadow: 1px 2px 2px #000000; margin-left:80px; margin-top:500px;}
+	.section01-box .b {font-weight: bold; font-size:50px; text-shadow: 2px 2px 8px #686868; margin-top:30px;}
+	#section2{background: url('../img/intro06.jpg'); background-size: cover; background-position:center;}
+	.section02-box {text-align: center; color:#fff; font-size:35px; text-shadow: 1px 2px 2px #686868; font-weight: bold; }
+	.section02-box .b {font-weight: bold; font-size:42px; text-shadow: 2px 2px 2px #686868; margin-top:10px;}
+
+</style>
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="section00-box">
+			<span>V8과 4번의 연속 통합우승을 비롯,<br> 수많은 승리의 기록을 가지고 있는 야구 명가</span><br>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	   <div class="section01-box">
+			<div>한국시리즈 최다 진출(17회)<br> 정규시즌 최다 우승(9회)<br>6년 연속 한국시리즈 진출(2010~2015)<br>12년 연속 포스트시즌 진출(1997~2008) <br>등의 기록들을 보유한 명문 구단</div>
+			<div class="b">SAMSUNG LIONS</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="section02-box">
+			<div>39년 프로야구 역사와 함께한 삼성 라이온즈</div>
+			<div class="b">2021년 삼성 라이온즈의 또 다른 야구역사가 시작됩니다.</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['page01', 'page02', 'page03','page04'],
+//        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C','#7E8F7C'],
+        scrollBar: true
+    });
+</script>
+
+<?php include('../sub_footer.php')?>

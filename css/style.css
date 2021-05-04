@@ -69,7 +69,8 @@ body{ background-repeat : no-repeat;}
 		.numbers > p{font-size:18px; color:gray;}
 		.numbers .num-data > ul {margin-top:30px;}
 		.numbers .num-data > ul > li{display: inline-block; padding:5px 60px;}
-		.numbers .num-data > ul > li > p {border-bottom: 1px; border-bottom:1px solid #bbb; padding-bottom:10px; margin-bottom:20px; font-size:50px; font-weight:bold;}
+		.numbers .num-data > ul > li > p {padding-bottom:10px; margin-bottom:20px; font-size:50px; font-weight:bold;}
+		.numbers .num-data > ul > li > p:after{content:""; display: block; border-bottom:1px solid #bbb;}
 		.numbers .num-data > ul > li > p > span{font-size:20px; color:gray;}
 		.numbers .num-data > ul > li > span{font-size:20px; color:gray;}
 /* index 슬라이드배너*/
