@@ -1,0 +1,35 @@
+<!-- 상단 내용 불러오기 -->
+<?php include('../sub_header.php');?>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0432be282496b485c6dc9d5b911c3352"></script>
+
+<!-- 서브 메뉴 -->
+<div class="snb-wrap">
+	<div>
+		<ul>
+			<li><a href="../page/info.html"><span>오시는 길</span></a></li>
+			<li class="on"><a href="../page/info-seat.html"><span>좌석 안내</span></a></li>
+			<li><a href="../page/info-food.html"><span>매장 안내</span></a></li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="info-wrap">
+	<div class="info-box">
+		<h2>좌석 안내</h2>
+		<img src="../img/info01.jpg" alt="">
+	</div>
+</div>
+
+
+<script>
+	var container = document.getElementById('map');
+	var options = {
+		center: new kakao.maps.LatLng(35.841477, 128.680339),
+		level: 3
+	};
+
+	var map = new kakao.maps.Map(container, options);
+</script>
+<?php include('../sub_footer.php')?>
